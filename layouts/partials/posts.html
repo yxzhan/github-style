@@ -3,7 +3,7 @@
   <div class="position-relative">
     <div>
       {{ if eq .Type "tags" }}
-      <div class="TableObject border-bottom border-gray-light py-3">
+      <!-- <div class="TableObject border-bottom border-gray-light py-3">
         <div class="user-repo-search-results-summary TableObject-item TableObject-item--primary v-align-top">
           <strong>{{ len .Pages }}</strong>
           results
@@ -20,7 +20,7 @@
             Clear filter
           </a>
         </div>
-      </div>
+      </div> -->
       {{else}}
         {{if gt (len .Site.Taxonomies.tags) 0}}
           {{partial "tags.html" .}}
